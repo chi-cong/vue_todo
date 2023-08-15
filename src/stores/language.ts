@@ -67,7 +67,7 @@ const languageSet = {
   }
 }
 
-export const languageStore = defineStore('language', () => {
+export const useLanguageStore = defineStore('language', () => {
   const mainSet = ref<SetType>(languageSet['vn'])
   const changeLanguage = (language: languages) => {
     mainSet.value = languageSet[language]
