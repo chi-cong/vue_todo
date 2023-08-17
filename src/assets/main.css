@@ -1,4 +1,19 @@
 @import './base.css';
 
-#app {
+:root {
+  /* font weight */
+  --thick-font: 900;
+  --normal-font: 700;
+  --light-font: 500;
+
+  /* colors */
+  --black: #000814;
+  --white: #f8f9fa;
+  --primary: #3a86ff;
+  --warming: #ff006e;
+  --secondary: #8338ec;
+
+  /* border radius */
+  --rounded-angle: 5px;
+  --cirle: 50%;
 }
