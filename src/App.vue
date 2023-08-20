@@ -1,24 +1,22 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router';
 import Navbar from './components/Navbar.vue';
+import TaskCard from './components/TaskCard.vue';
 </script>
 
 <template>
   <Navbar />
+  <div class="task-card-container">
+    <TaskCard></TaskCard>
+  </div>
 </template>
 
 <style scoped>
-  header{
-    width: 100%;
-    height: auto;
-    display: flex;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-left: 5%;
-    justify-content: space-between``;
-    align-items: center;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background: var(--primary);
-    font-weight: var(--thick-font);
-  }
+.task-card-container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px auto auto auto;
+}
 </style>

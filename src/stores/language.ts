@@ -21,6 +21,7 @@ interface SetType {
     addCard: string
     save: string
     discard: string
+    edit: string
   }
 }
 
@@ -42,7 +43,8 @@ const languageSet = {
     button: {
       addCard: 'Thêm thẻ mới',
       save: 'Lưu',
-      discard: 'Hủy'
+      discard: 'Hủy',
+      edit: 'Sửa'
     }
   },
   en: {
@@ -62,7 +64,8 @@ const languageSet = {
     button: {
       addCard: 'Add new card',
       save: 'save',
-      discard: 'discard'
+      discard: 'discard',
+      edit: 'Edit'
     }
   }
 }

@@ -13,7 +13,7 @@ const languageStore = useLanguageStore();
   </header>
 </template>
 
-<style>
+<style scoped>
   header{
     width: 100%;
     height: auto;
@@ -24,7 +24,6 @@ const languageStore = useLanguageStore();
     padding-right: 5%;
     justify-content: space-between;
     align-items: center;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background: var(--primary);
     color: var(--white);
   }
@@ -39,7 +38,7 @@ const languageStore = useLanguageStore();
   }
   .language-btn{
     background: var(--primary);
-    border: 2px solid var(--white);
+    border: var(--normal-white-border);
     border-radius: var(--rounded-angle);
     color: var(--white);
   }
