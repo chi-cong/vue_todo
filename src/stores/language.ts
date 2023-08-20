@@ -63,8 +63,8 @@ const languageSet = {
     },
     button: {
       addCard: 'Add new card',
-      save: 'save',
-      discard: 'discard',
+      save: 'Save',
+      discard: 'Discard',
       edit: 'Edit'
     }
   }
