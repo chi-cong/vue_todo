@@ -1,13 +1,13 @@
-<script lang="ts" setup>
+<script setup lang="ts">
 </script>
 
 <template>
-  <input class="text-input" type="text">
+  <input type="datetime-local" name="" id="" class="date-time-input">
 </template>
 
-<style scoped>
-.text-input {
-  width: 20%;
+<style>
+.date-time-input {
+  width: auto;
   height: 2.5rem;
   font-size: var(--small-text-size);
   border: var(--normal-primary-border);

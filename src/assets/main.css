@@ -15,6 +15,7 @@
 
   /* border radius */
   --rounded-angle: 5px;
+  --rounded-side: 10px;
   --cirle: 50%;
 
   /* border */
@@ -24,6 +25,9 @@
   --thick-white-border: 3px solid var(--white);
   --normal-white-border: 2px solid var(--white);
   --light-white-border: 1px solid var(--white);
+  --thick-secondary-border: 3px solid var(--secondary);
+  --normal-secondary-border: 2px solid var(--secondary);
+  --light-secondary-border: 1px solid var(--secondary);
 
   /* padding */
   --small-padding: 5px;
@@ -32,7 +36,9 @@
 
   /* background */
   --transparent-black-bg: rgb(0, 0, 0, 0.2);
+  --transparent-primary-bg: #3a85ffcc;
 
   /* text */
+  --small-text-size: 15px;
   --normal-text-size: 20px;
 }
