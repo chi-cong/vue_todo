@@ -1,8 +1,11 @@
 <script lang="ts" setup>
+import { ref } from 'vue';
+import type { FilterOptions } from '../models/FilterOption';
+const inputValue = ref<string>('');
 </script>
 
 <template>
-  <input class="text-input" type="text">
+  <input v-model="inputValue" @input="$emit('emit-value', inputValue)" class="text-input" type="text">
 </template>
 
 <style scoped>
