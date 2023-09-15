@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import { useLanguageStore } from "../stores/language";
 import { onBeforeUpdate } from "vue";
-import type { FilterOptions, } from "@/models/FilterOption";
+import type { FilterOptions } from "@/models/FilterOption";
 
 interface FilterBtnProp {
   btnType: FilterOptions;

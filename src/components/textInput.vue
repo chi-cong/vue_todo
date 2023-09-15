@@ -1,6 +1,5 @@
 <script lang="ts" setup>
 import { ref } from 'vue';
-import type { FilterOptions } from '../models/FilterOption';
 const inputValue = ref<string>('');
 </script>
 

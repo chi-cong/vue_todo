@@ -1,8 +1,10 @@
 <script setup lang="ts">
+import { ref } from 'vue';
+const date = ref<string>('');
 </script>
 
 <template>
-  <input type="datetime-local" name="" id="" class="date-time-input">
+  <input v-model="date" @input="$emit('emit-date', date)" type="datetime-local" class="date-time-input">
 </template>
 
 <style>
