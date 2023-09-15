@@ -1,7 +1,7 @@
 import { defineStore } from 'pinia'
 import { ref } from 'vue'
 
-export type languages = 'vn' | 'en'
+export type Languages = 'vn' | 'en'
 
 interface SetType {
   appName: string
@@ -72,8 +72,10 @@ const languageSet = {
 
 export const useLanguageStore = defineStore('language', () => {
   const mainSet = ref<SetType>(languageSet['vn'])
-  const changeLanguage = (language: languages) => {
+  const currLang = ref<Languages>('vn')
+  const changeLanguage = (language: Languages) => {
     mainSet.value = languageSet[language]
+    currLang.value = language
   }
-  return { mainSet, changeLanguage }
+  return { mainSet, changeLanguage, currLang }
 })

@@ -1,14 +1,22 @@
 <script lang="ts" setup>
-import { useLanguageStore } from '../stores/language'
+import { useLanguageStore } from '../stores/language';
+import type { Languages } from '../stores/language';
 const languageStore = useLanguageStore();
+const changeLang = (language: Languages) => {
+  languageStore.changeLanguage(language);
+  console.log(languageStore.currLang);
+
+}
 </script>
 
 <template>
   <header>
     <h1 class="app-name">{{ languageStore.mainSet.appName }}</h1>
     <div class="language">
-      <button class="language-btn active-language-btn">VN</button>
-      <button class="language-btn">EN</button>
+      <button @click="changeLang('vn')" class="language-btn"
+        :class="{ 'active-language-btn': languageStore.currLang === 'vn' }">VN</button>
+      <button @click="changeLang('en')" class="language-btn"
+        :class="{ 'active-language-btn': languageStore.currLang === 'en' }">EN</button>
     </div>
   </header>
 </template>
