@@ -4,8 +4,6 @@ import type { Languages } from '../stores/language';
 const languageStore = useLanguageStore();
 const changeLang = (language: Languages) => {
   languageStore.changeLanguage(language);
-  console.log(languageStore.currLang);
-
 }
 </script>
 
